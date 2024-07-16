@@ -1,4 +1,5 @@
 import { Box } from "@mui/material";
+
 import { Footer, Header } from "../components";
 
 // eslint-disable-next-line react/prop-types
