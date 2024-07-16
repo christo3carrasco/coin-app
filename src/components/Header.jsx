@@ -1,5 +1,5 @@
 import { AppBar, Button, styled, Toolbar, Typography } from "@mui/material";
-import { Link } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
 
 const LinkButton = styled(Button)(({ theme }) => ({
   color: theme.palette.common.white,
@@ -13,13 +13,13 @@ export const Header = () => {
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           COIN APP
         </Typography>
-        <LinkButton component={Link} to="/">
+        <LinkButton component={RouterLink} to="/">
           Home
         </LinkButton>
-        <LinkButton component={Link} to="/coins">
+        <LinkButton component={RouterLink} to="/coins">
           Coins
         </LinkButton>
-        <LinkButton component={Link} to="/user">
+        <LinkButton component={RouterLink} to="/user">
           Users
         </LinkButton>
       </Toolbar>
